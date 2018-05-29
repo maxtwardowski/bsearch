@@ -22,7 +22,6 @@ void * bsearch(const void * key, const void * base, size_t nmemb, size_t size, i
         first = 0,
         last = nmemb,
         medium;
-
     while (first <= last) {
         medium = first + (last - first) / 2;
         current_element = ((const char *) base) + (medium * size);
